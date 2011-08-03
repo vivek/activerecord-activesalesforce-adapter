@@ -62,9 +62,9 @@ gem 'facets', '>= 2.4'
 require 'facets/openhash'
 
 require 'rforce/binding'
-require 'rforce/soap_response_rexml'
+require 'rforce/soap_response_nokogiri' rescue nil
 require 'rforce/soap_response_hpricot' rescue nil
-require 'rforce/soap_response_expat' rescue nil
+require 'rforce/soap_response_rexml'
 
 
 module RForce
@@ -74,7 +74,7 @@ module RForce
   end
   
   SoapResponse = 
-    parser(:SoapResponseExpat) ||
+    parser(:SoapResponseNokogiri) ||
     parser(:SoapResponseHpricot) ||
     SoapResponseRexml
   

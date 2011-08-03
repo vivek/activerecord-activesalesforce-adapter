@@ -33,7 +33,7 @@ Gem::Specification.new do |s|
      "lib/rforce/binding.rb",
      "lib/rforce/method_keys.rb",
      "lib/rforce/soap_pullable.rb",
-     "lib/rforce/soap_response_expat.rb",
+     "lib/rforce/soap_response_nokogiri.rb",
      "lib/rforce/soap_response_hpricot.rb",
      "lib/rforce/soap_response_rexml.rb",
      "lib/rforce/version.rb",
@@ -94,18 +94,18 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<rails>, [">= 2.3.3"])
       s.add_runtime_dependency(%q<builder>, [">= 1.2.4"])
-      s.add_runtime_dependency(%q<xmlparser>, [">= 0.6"])
+      s.add_runtime_dependency(%q<nokogiri>, [">= 1.5.0"])
       s.add_runtime_dependency(%q<facets>, [">= 2.4"])
     else
       s.add_dependency(%q<rails>, [">= 2.3.3"])
       s.add_dependency(%q<builder>, [">= 1.2.4"])
-      s.add_dependency(%q<xmlparser>, [">= 0.6"])
+      s.add_dependency(%q<nokogiri>, [">= 1.5.0"])
       s.add_dependency(%q<facets>, [">= 2.4"])
     end
   else
     s.add_dependency(%q<rails>, [">= 2.3.3"])
     s.add_dependency(%q<builder>, [">= 1.2.4"])
-    s.add_dependency(%q<xmlparser>, [">= 0.6"])
+    s.add_dependency(%q<nokogiri>, [">= 1.5.0"])
     s.add_dependency(%q<facets>, [">= 2.4"])
   end
 end
