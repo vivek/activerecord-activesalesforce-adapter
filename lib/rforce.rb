@@ -58,8 +58,9 @@ require 'rubygems'
 gem 'builder', '>= 2.0.0'
 require 'builder'
 
-gem 'facets', '>= 2.4'
-require 'facets/openhash'
+#gem 'facets', '>= 2.4'
+gem 'hashery', '>= 1.4.0'
+require 'hashery/openhash'
 
 require 'rforce/binding'
 require 'rforce/soap_response_nokogiri' rescue nil

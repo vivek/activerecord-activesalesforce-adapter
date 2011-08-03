@@ -95,20 +95,23 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<rails>, [">= 2.3.3"])
       s.add_runtime_dependency(%q<builder>, [">= 1.2.4"])
       s.add_runtime_dependency(%q<nokogiri>, [">= 1.5.0"])
-      s.add_runtime_dependency(%q<facets>, [">= 2.4"])
+      #s.add_runtime_dependency(%q<facets>, [">= 2.4"])
+      s.add_runtime_dependency(%q<hashery>, [">= 1.4.0"])
       s.add_runtime_dependency(%q<hpricot>, [">= 0.8.4"])
     else
       s.add_dependency(%q<rails>, [">= 2.3.3"])
       s.add_dependency(%q<builder>, [">= 1.2.4"])
       s.add_dependency(%q<nokogiri>, [">= 1.5.0"])
-      s.add_dependency(%q<facets>, [">= 2.4"])
+      #s.add_dependency(%q<facets>, [">= 2.4"])
+      s.add_dependency(%q<hashery>, [">= 1.4.0"])
       s.add_dependency(%q<hpricot>, [">= 0.8.4"])
     end
   else
     s.add_dependency(%q<rails>, [">= 2.3.3"])
     s.add_dependency(%q<builder>, [">= 1.2.4"])
     s.add_dependency(%q<nokogiri>, [">= 1.5.0"])
-    s.add_dependency(%q<facets>, [">= 2.4"])
+    #s.add_dependency(%q<facets>, [">= 2.4"])
+    s.add_dependency(%q<hashery>, [">= 1.4.0"])
     s.add_dependency(%q<hpricot>, [">= 0.8.4"])
   end
 end
