@@ -1,3 +1,5 @@
+*** Removing the dependency on xmlparser gem (0.6.81) which doesn't compile on ruby-1.9.x, instead using Nokogiri ***
+
 == Welcome to Active Salesforce
 
 ActiveSalesforce is an extension to the Rails Framework that allows for the dynamic creation and management of ActiveRecord objects through the use of Salesforce meta-data and uses a Salesforce.com organization as the backing store.
