@@ -11,7 +11,7 @@ module RForce
       noko_parser = NokoParser.new
       parser = Nokogiri::XML::SAX::Parser.new(noko_parser)
       parser.parse(@content)
-      @parsed
+      noko_parser.result
     end
   end
 

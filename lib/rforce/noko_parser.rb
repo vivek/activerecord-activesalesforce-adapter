@@ -25,4 +25,8 @@ class NokoParser < Nokogiri::XML::SAX::Document
   def characters data
     text data unless @done
   end
+
+	def result
+		@parsed
+	end
 end
